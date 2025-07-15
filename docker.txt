@@ -1,0 +1,22 @@
+도커허브 : 이미지 업로드
+
+1. movie 이미지 생성
+2. 도커허브로 업로드
+EC2에서는 movie 이미지 다운로드 후 실행
+
+
+수작업 배포
+1. 프로젝트 완성 후 (.jar, .war)로 패킹
+2. 서버로 업로드
+3. 서버에서 압축 풀어
+
+하지만 도커를 쓴다면?
+1. movie 이미지 생성 : docker build -t (id)/movie .
+2. 도커허브로 업로드 : docker push (id)/movie:latest
+3. EC2에서 업로드 했던 이미지 다운로드 후 실행 : sudo docker pull (id)/movie:latest
+
+이미지 잘 가져 왔는지 확인 : sudo docker images
+
+서버 열어 sudo docker run -p 8080:8080 -d (id)/movie:latest
+
+git + github + github action + ec2 : 배포 자동화
