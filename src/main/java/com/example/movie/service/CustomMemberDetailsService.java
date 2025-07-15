@@ -1,9 +1,5 @@
 package com.example.movie.service;
 
-import java.util.Optional;
-import java.util.stream.Collectors;
-
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -14,7 +10,6 @@ import com.example.movie.dto.AuthMemberDTO;
 import com.example.movie.dto.MemberDTO;
 import com.example.movie.dto.PasswordDTO;
 import com.example.movie.entity.Member;
-import com.example.movie.entity.MemberRole;
 import com.example.movie.repository.MemberRepository;
 
 import jakarta.transaction.Transactional;

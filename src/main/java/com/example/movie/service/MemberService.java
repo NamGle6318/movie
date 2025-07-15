@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 
 import com.example.movie.dto.MemberDTO;
 import com.example.movie.entity.Member;
-import com.example.movie.entity.MemberRole;
 import com.example.movie.repository.MemberRepository;
 import com.example.movie.repository.ReviewRepository;
 
