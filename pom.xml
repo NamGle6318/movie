@@ -143,8 +143,8 @@
 							<classifier>jakarta</classifier>
 						</path>
 						<path>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-compiler-plugin</artifactId>
+							<groupId>jakarta.persistence</groupId>
+							<artifactId>jakarta.persistence-api</artifactId>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
